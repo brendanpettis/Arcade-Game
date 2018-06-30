@@ -1,0 +1,19 @@
+body {
+	text-align: center;
+	padding: 0;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.score{
+	margin-bottom: -3%;
+}
+.pop-up-modal {
+	color: black;
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
