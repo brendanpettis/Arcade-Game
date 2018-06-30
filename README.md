@@ -8,5 +8,9 @@ Collecting gems during the round will give you bonus points and increase your ov
 A collision will cause the game to end and everything to reset.
 
 #### To Play The Game
-- Open the index.html file in any browser.
+- Visit: https://brendanpettis.github.io/Arcade-Game/index.html 
+OR
+- Download the files and open the index.html file in any browser.
+
+#### Controls
 - Utilize the arrow keys on your computer to move the character up, down, left, right.
