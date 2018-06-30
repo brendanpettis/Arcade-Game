@@ -27,18 +27,20 @@ const resetPlayer = () => {
   player.y = INIT_Y;
 };
 // Displays A Message
-const displayModal = (message,sub_message) => {
-  popUp.innerHTML = 
-`<h2>${message}</h2>
+const displayModal = (message, sub_message) => {
+  popUp.innerHTML =
+    `<h2>${message}</h2>
 <h3>${sub_message}</h3>`;
 };
 // Alerts the player of a win, increments level and score, potentially adds new rewards, and resets the players position
 const roundWin = () => {
   const message = 'Great Work!';
   const sub_message = 'Next Level!';
-  displayModal(message,sub_message);
+  displayModal(message, sub_message);
   popUp.style.display = 'inline';
-  setTimeout(()=>{popUp.style.display = 'none';},2000);
+  setTimeout(() => {
+    popUp.style.display = 'none';
+  }, 2000);
   // Player Level Increases
   player.level++;
   // Player Score Increases
@@ -52,11 +54,13 @@ const roundWin = () => {
 };
 // Alerts the player of a loss,
 const gameOver = () => {
-  const message ='GAME OVER!';
+  const message = 'GAME OVER!';
   const sub_message = 'You were hit!';
   displayModal(message, sub_message);
   popUp.style.display = 'inline';
-  setTimeout(()=>{popUp.style.display = 'none';},2000);
+  setTimeout(() => {
+    popUp.style.display = 'none';
+  }, 2000);
   resetRewards();
   resetPlayer();
   resetEnemies();
@@ -183,7 +187,6 @@ const player = new Player();
 let allRewards = [new Reward()];
 // Places all enemy objects in an array called allEnemies
 let allEnemies = [new Enemy(), new Enemy(), new Enemy()];
-
 
 // This listens for key presses and sends the keys to the
 // Player.handleInput() method. 
