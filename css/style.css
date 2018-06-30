@@ -11,7 +11,7 @@ body {
 .score{
 	margin-bottom: -3%;
 }
-.pop-up-modal {
+.pop-up-modal, .controls {
 	color: black;
 	display: inline;
 	margin: 0;
