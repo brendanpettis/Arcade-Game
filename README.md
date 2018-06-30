@@ -8,7 +8,7 @@ Collecting gems during the round will give you bonus points and increase your ov
 A collision will cause the game to end and everything to reset.
 
 #### To Play The Game
-- Visit: https://brendanpettis.github.io/Arcade-Game/index.html 
+- Visit: https://brendanpettis.github.io/Arcade-Game/ 
 OR
 - Download the files and open the index.html file in any browser.
 
