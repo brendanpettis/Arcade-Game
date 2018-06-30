@@ -14,3 +14,7 @@ OR
 
 #### Controls
 - Utilize the arrow keys on your computer to move the character up, down, left, right.
+
+#### To Do
+- Add Mobile Controls 
+- Add A High Scores Menu
