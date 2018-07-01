@@ -28,9 +28,25 @@ const resetPlayer = () => {
 };
 // Displays A Message
 const displayModal = (message, sub_message) => {
-  popUp.innerHTML =
+  if(sub_message.length === 0){
+    popUp.innerHTML =
+      `<p>${message}</p>
+      <p>${sub_message}</p>`;
+    }
+  else { 
+    popUp.innerHTML =
     `<h2>${message}</h2>
-<h3>${sub_message}</h3>`;
+    <h3>${sub_message}</h3>`;
+  }
+};
+// Displays Controller Instructions
+const instructions = () => {
+  const message = 'Use the arrow keys on your keyboard, or use the buttons provided to move your character.';
+  displayModal(message, '');
+  popUp.style.display = 'inline';
+  setTimeout(() => {
+    popUp.style.display = 'none';
+  }, 3000);
 };
 // Alerts the player of a win, increments level and score, potentially adds new rewards, and resets the players position
 const roundWin = () => {
